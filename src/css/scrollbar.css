@@ -1,0 +1,37 @@
+/* width */
+::-webkit-scrollbar {
+    width: 1px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: rgba(0,0,0,0); 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #000000; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(219, 219, 219); 
+  }
+
+@media (max-width: 768px) {
+  .scale-custom {
+      --tw-scale-x: 3;
+      --tw-scale-y: 3;
+      transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+}
+@media (min-width: 768px) {
+  @media (max-width: 1024){
+  .scale-custom2 {
+      --tw-scale-x: 2;
+      --tw-scale-y: 2;
+      transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  
+    }
+  }
+}
