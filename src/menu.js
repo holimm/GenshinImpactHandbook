@@ -103,7 +103,7 @@ export default function Menu(){
           <motion.div ref={refModel} className='h-screen w-full fixed z-20 top-0 bg-white/90 bg-opacity-90'
             initial={{y: props.x_from}}
             animate={{y: props.x_to}}
-            transition={{duration: 1.2,ease:'easeOut'}}
+            transition={{duration: 1,ease:'easeOut'}}
           >
             <ShowcaseContent/>
           </motion.div>
