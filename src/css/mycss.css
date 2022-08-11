@@ -1,33 +1,19 @@
 .scale-custom {
-    --tw-scale-x: 1.13;
-    --tw-scale-y: 1.13;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-.scale-custom2 {
-    --tw-scale-x: 1.32;
-    --tw-scale-y: 1.32;
+    --tw-scale-x: 1.1;
+    --tw-scale-y: 1.08;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 .remove-models-detail {
   animation-name: animation_models_detail;
-  animation-duration: 2s;
+  animation-duration: 1.4s;
 }
 @keyframes animation_models_detail {
   0%   {left:0px;}
   100% {left:-2000px;}
 }
-.remove-selector {
-  animation-name: animation_selector;
-  animation-duration: 2s;
-}
-
-@keyframes animation_selector {
-  0%   {top:0px;}
-  100% {top:-2000px;}
-}
 .remove-menu {
   animation-name: animation_menu;
-  animation-duration: 2s;
+  animation-duration: 1.5s;
 }
 
 @keyframes animation_menu {

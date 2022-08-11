@@ -2,8 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './css/mycss.css';
 import "./css/scrollbar.css";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import Home from './home';
 import store from './app/store';
 import { Provider } from 'react-redux';
