@@ -23,7 +23,7 @@ export default function Home(){
             </nav>
             <div className='h-full w-full mx-auto text-white mt-32'>
               <img className="mx-auto" width={'30%'} height={'30%'} src="./image/genshinlogo.svg" alt="Genshin Logo"></img>
-              <p className="text-center text-4xl mt-10 font-bold" style={{fontFamily: 'Merienda'}}>CHARACTERS MODEL SHOWCASE</p>
+              <p className="text-center text-4xl mt-10 font-bold" style={{fontFamily: 'Merienda'}}>CHARACTER MODELS SHOWCASE</p>
             </div>
           </div>
           <Menu/>
