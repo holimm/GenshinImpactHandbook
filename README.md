@@ -1,4 +1,4 @@
-# MySimpleRadio 🎶
+# MyCharacterModels 🎶
 
 ## ❓ What's this app about
 A simple showcase of 3D character models from Genshin Impact. All 3D models were created by [Pablo Dobarro](https://www.artstation.com/pablodp606).
