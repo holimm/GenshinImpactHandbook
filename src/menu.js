@@ -63,7 +63,7 @@ export default function Menu(){
       function ShowcaseContent(){
         function RemoveModelsDetail(){
           refModel.current.classList.add('remove-models-detail');
-          setTimeout(()=>dispatch(setModelsDetail(null)),600)
+          setTimeout(()=>dispatch(setModelsDetail(null)),1200)
         }
         return(
             <>
