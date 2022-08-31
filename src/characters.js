@@ -23,7 +23,7 @@ export default function Characters(){
             <div className="h-fit w-11/12 mx-auto">
                 <div className="inline-block">
                 <motion.div onClick={RemoveCharacterSelect} className="text-3xl text-white h-fit w-fit float-left mt-5 cursor-pointer"
-                    whileHover={{scale:1.1}} whileTap={{scale:0.9}} style={{fontFamily: 'Merienda'}}
+                    whileHover={{scale:1.1}} whileTap={{scale:0.9}} style={{fontFamily: 'genshinFont'}}
                 >&lt; Back</motion.div>
                 </div>
             </div>

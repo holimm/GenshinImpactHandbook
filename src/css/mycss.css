@@ -1,7 +1,12 @@
 .scale-custom {
-    --tw-scale-x: 1.5;
-    --tw-scale-y: 1.3;
+    --tw-scale-x: 1.2;
+    --tw-scale-y: 1.1;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.scale-custom-2 {
+  --tw-scale-x: 1.2;
+  --tw-scale-y: 1.2;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 .remove-models-detail {
   animation-name: animation_models_detail;
@@ -19,4 +24,9 @@
 @keyframes animation_menu {
   0%   {top:0px;}
   100% {top:-2000px;}
+}
+
+@font-face {
+  font-family: genshinFont;
+  src: url(zh-cn.ttf);
 }
