@@ -1,16 +1,17 @@
 import React, { useRef } from "react";
 import { motion } from "framer-motion";
-import { setSelectorState, setModelsDetail, setMenuState } from "./counter/counterSlice";
+import { setModelsVisible, setModelsDetail, setMenuState } from "../counter/counterSlice";
 import { useSelector, useDispatch } from "react-redux/es/exports";
+import { useNavigate } from "react-router-dom";
 
-export default function Characters(){
+export default function ModelsTab(){
     const dispatch = useDispatch();
-    const selectorState = useSelector((state)=>state.counter.selectorState);
+    const models_visible = useSelector((state)=>state.counter.models_visible);
     const models = useSelector((state)=>state.counter.models);
     const refCharacterSelector = useRef(null);
     function RemoveCharacterSelect(){
         refCharacterSelector.current.classList.add('remove-menu');
-        setTimeout(()=>dispatch(setSelectorState()),500)
+        setTimeout(()=>dispatch(setModelsVisible()),500)
         setTimeout(()=>dispatch(setMenuState()),500)
       }
     function CharList(){
@@ -50,5 +51,6 @@ export default function Characters(){
         </motion.div>   
         );
     }
-    return( <>{selectorState ? <CharList/> : null }</> );
+    return( <>{models_visible ? <CharList/> : null }</> );
 }
+

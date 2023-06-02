@@ -4,7 +4,7 @@ export const counterSlice = createSlice({
     name: 'counter',
     initialState: {
         menuState: false,
-        selectorState: false,
+        models_visible: false,
         models: [
             {
             name: 'Ningguang',
@@ -280,13 +280,30 @@ export const counterSlice = createSlice({
         ],
         models_detail: null,
         models_detail_visible: false,
+        story_cutscenes: [
+            {
+            name: "Promise of a People's Dream",
+            url: "hQ5GEOlwLUQ"
+            },
+            {
+            name: "Tsubaki in Thawing Snow",
+            url: "rAlymhPyKhQ"
+            },
+        ],
+        story_cutscenes_playing_url: "",
     },
     reducers: {
         setMenuState: (state,bool)=>{
             state.menuState = !state.menuState;
         },
-        setSelectorState: (state)=>{
-            state.selectorState = !state.selectorState;
+        setModelsVisible: (state)=>{
+            state.models_visible = !state.models_visible;
+        },
+        setStoryCutscenesVisible: (state)=>{
+            state.story_cutscenes_visible = !state.story_cutscenes_visible;
+        },
+        setStoryCutscenesPlayingURL: (state,value)=>{
+            state.story_cutscenes_playing_url = value.payload;
         },
         setModelsDetail: (state,item)=>{           
             if(item.payload!==null){
@@ -303,5 +320,5 @@ export const counterSlice = createSlice({
     },
 })
 
-export const { setMenuState, setSelectorState, setModelsDetail } = counterSlice.actions;
+export const { setMenuState, setModelsVisible, setModelsDetail, setStoryCutscenesVisible, setStoryCutscenesPlayingURL } = counterSlice.actions;
 export default counterSlice.reducer;
