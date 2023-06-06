@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/MyCharacterModels/static/css/main.620c71ec.css",
-    "main.js": "/MyCharacterModels/static/js/main.d6206781.js",
-    "index.html": "/MyCharacterModels/index.html",
-    "main.620c71ec.css.map": "/MyCharacterModels/static/css/main.620c71ec.css.map",
-    "main.d6206781.js.map": "/MyCharacterModels/static/js/main.d6206781.js.map"
+    "main.css": "/GenshinImpactHandbook/static/css/main.ff09faa6.css",
+    "main.js": "/GenshinImpactHandbook/static/js/main.139eea49.js",
+    "static/media/zh-cn.ttf": "/GenshinImpactHandbook/static/media/zh-cn.54a8212866e6ec1b1003.ttf",
+    "index.html": "/GenshinImpactHandbook/index.html",
+    "main.ff09faa6.css.map": "/GenshinImpactHandbook/static/css/main.ff09faa6.css.map",
+    "main.139eea49.js.map": "/GenshinImpactHandbook/static/js/main.139eea49.js.map"
   },
   "entrypoints": [
-    "static/css/main.620c71ec.css",
-    "static/js/main.d6206781.js"
+    "static/css/main.ff09faa6.css",
+    "static/js/main.139eea49.js"
   ]
 }
