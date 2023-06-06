@@ -22,7 +22,7 @@ export default function Menu(){
       }
       function BackToLoginScreen(){
         refMenu.current.classList.add('remove-menu');
-        setTimeout(()=>{dispatch(setMenuState(true));navigate('/GenshinImpactHandbook');},600)
+        setTimeout(()=>{dispatch(setMenuState(true));navigate('/GenshinImpactHandbook/');},600)
       }
       function RedirectToStoryCutscenes(){
         refTabAnimation.current.classList.add('tab-animate');
@@ -35,7 +35,7 @@ export default function Menu(){
             <div className="h-60 w-full flex justify-start bg-gradient-to-b from-black/70 to-sky-600/70 pb-2">
               <div className="h-fit w-1/3 flex-rows justify-center mt-6">
                   <div className="h-32 w-32 mx-auto rounded-full bg-amber-500 border-4 border-white">
-                    <div className="h-full w-full rounded-full bg-contain bg-center bg-no-repeat" style={{backgroundImage: `url(../image/lumine.png)`}}></div>                  
+                    <div className="h-full w-full rounded-full bg-contain bg-center bg-no-repeat" style={{backgroundImage: `url(./image/lumine.png)`}}></div>                  
                   </div>
                   <div className="h-7 w-10/12 mx-auto mt-4 rounded-full bg-slate-700 border-2 border-gray-400">
                     <p className=" text-slate-200 ml-2" style={{fontFamily:'genshinFont'}}>UID</p>
@@ -51,7 +51,7 @@ export default function Menu(){
                     <div className="float-left h-full w-1/4"><p className="text-lg text-slate-200 bg-slate-700/30 text-end" style={{fontFamily: 'genshinFont'}}>45&nbsp;</p></div>
                   </div>   
                   <div className="h-1/4 w-full flex justify-start">
-                    <img src='../image/adventurexp.webp'></img>
+                    <img src='./image/adventurexp.webp'></img>
                     <div className="h-full w-full">
                       <div className="h-fit w-full">
                         <div className="float-left h-full w-2/3"><p className="text-md text-slate-200  text-start" style={{fontFamily: 'genshinFont'}}>Adventure XP</p></div>
@@ -84,7 +84,7 @@ export default function Menu(){
                 setTimeout(()=>dispatch(setModelsVisible('Genshin Impact')),620)}} 
                 className='h-40 w-40 flex-rows justify-center items-center text-lg text-center text-slate-200 cursor-pointer mt-5 bg-slate-600 border-4 border-slate-500' style={{fontFamily: 'genshinFont'}} whileHover={{scale: 1.1}} whileTap={{scale: 1}}>
                 <div className="h-full w-full p-3">
-                  <div className="h-4/6 w-full bg-contain bg-center bg-no-repeat" style={{backgroundImage: `url('../image/icon/characterIcon.webp')`,backgroundSize: '60%', backgroundPositionY: '25%'}}></div>
+                  <div className="h-4/6 w-full bg-contain bg-center bg-no-repeat" style={{backgroundImage: `url('./image/icon/characterIcon.webp')`,backgroundSize: '60%', backgroundPositionY: '25%'}}></div>
                   <div className="h-2/6 w-full flex justify-center items-center">
                     <p className="text-md">Models</p>
                   </div>
@@ -92,7 +92,7 @@ export default function Menu(){
               </motion.div>
               <motion.div onClick={()=>{RedirectToStoryCutscenes()}} className='h-40 w-40 flex-rows justify-center items-center text-lg text-center text-slate-200 cursor-pointer mt-5 bg-slate-600 border-4 border-slate-500' style={{fontFamily: 'genshinFont'}} whileHover={{scale: 1.1}} whileTap={{scale: 1}}>
                 <div className="h-full w-full p-3">
-                  <div className="h-4/6 w-full bg-contain bg-center bg-no-repeat" style={{backgroundImage: `url('../image/icon/characterIcon.webp')`,backgroundSize: '60%', backgroundPositionY: '25%'}}></div>
+                  <div className="h-4/6 w-full bg-contain bg-center bg-no-repeat" style={{backgroundImage: `url('./image/icon/characterIcon.webp')`,backgroundSize: '60%', backgroundPositionY: '25%'}}></div>
                   <div className="h-2/6 w-full flex justify-center items-center">
                     <p className="text-md">Cutscenes</p>
                   </div>
@@ -115,13 +115,13 @@ export default function Menu(){
             >     
               <div className="h-1/6 w-full">
                 <motion.div onClick={RemoveMenu} className="h-14 w-14 mx-auto mt-5 rounded-full bg-orange-50 border-4 border-slate-500 cursor-pointer" whileHover={{scale: 1.1}} whileTap={{scale: 1}}>
-                  <div className="h-full w-full rounded-full bg-contain bg-center bg-no-repeat" style={{backgroundImage: `url('../image/icon/back.svg')`,backgroundSize: '80%'}}></div>                 
+                  <div className="h-full w-full rounded-full bg-contain bg-center bg-no-repeat" style={{backgroundImage: `url('./image/icon/back.svg')`,backgroundSize: '80%'}}></div>                 
                 </motion.div>
               </div>
               <div className="h-4/6 w-full"></div>
               <div className="h-1/6 w-full">
                 <motion.div onClick={BackToLoginScreen} className="h-14 w-14 mx-auto mt-5 rounded-full cursor-pointer" whileHover={{scale: 1.1}} whileTap={{scale: 1}}>
-                  <div className="h-full w-full rounded-full bg-contain bg-center bg-no-repeat" style={{backgroundImage: `url('../image/icon/back2.svg')`,backgroundSize: '80%'}}></div>
+                  <div className="h-full w-full rounded-full bg-contain bg-center bg-no-repeat" style={{backgroundImage: `url('./image/icon/back2.svg')`,backgroundSize: '80%'}}></div>
                 </motion.div>
               </div>
             </motion.div>  

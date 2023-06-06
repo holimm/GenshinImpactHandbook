@@ -23,20 +23,20 @@ export default function LoginScreen(){
       return(
         <>
           <div className='h-screen w-full absolute top-0' ref={refGate}>           
-            <ReactPlayer className='scale-custom react-player' width={'100%'} height={'100%'} url={`../video/openDoor.mp4`} playing={gateOpen} volume={0.2} muted={true} ></ReactPlayer>
+            <ReactPlayer className='scale-custom react-player' width={'100%'} height={'100%'} url={`./video/openDoor.mp4`} playing={gateOpen} volume={0.2} muted={true} ></ReactPlayer>
           </div>
           <div className='h-screen w-full absolute top-0' ref={refWait}>     
-              <ReactPlayer className='scale-custom react-player' width={'100%'} height={'100%'} url={`../video/appearDoor.mp4`} playing={gateAppear} volume={0.2} muted={true}></ReactPlayer>
+              <ReactPlayer className='scale-custom react-player' width={'100%'} height={'100%'} url={`./video/appearDoor.mp4`} playing={gateAppear} volume={0.2} muted={true}></ReactPlayer>
           </div>
           <div ref={refContinue} className="h-screen w-full bg-transparent absolute top-0 z-50"></div>
           {continueScreen ?
-          <motion.div ref={refContinue} className="h-screen w-full absolute top-0 z-50" onClick={openGate}
+          <motion.div ref={refContinue} className="h-screen w-full absolute top-0 z-50 cursor-pointer" onClick={openGate}
             initial={{opacity:0}}
             animate={{opacity:1}}
             transition={{duration:3}}
           >
             <div className="h-5/6 w-full"></div>
-            <div className="h-14 w-full flex justify-center py-2 mt-8 cursor-default">
+            <div className="h-14 w-full flex justify-center py-2 mt-8 cursor-pointer">
               <div className="h-full w-1/4 bg-gradient-to-l from-black to-transparent opacity-70"></div>
               <div className="h-full w-2/4 bg-black bg-opacity-70 flex items-center justify-center">
                 <p className="text-2xl text-center text-white" style={{fontFamily: 'genshinFont'}}>CLICK TO BEGIN</p>

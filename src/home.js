@@ -35,13 +35,13 @@ export default function Home(){
                 whileHover={{scale:1.1}}
                 whileTap={{scale:0.9}}
                 >
-                  <div className="h-full w-full bg-contain bg-center bg-no-repeat" style={{backgroundImage: `url('../image/icon/paimon.webp')`, backgroundSize: '70%'}}></div>
+                  <div className="h-full w-full bg-contain bg-center bg-no-repeat" style={{backgroundImage: `url('./image/icon/paimon.webp')`, backgroundSize: '70%'}}></div>
                 </motion.div>   
                 <motion.div onClick={()=>ChangeMute()} className='h-20 w-20 mt-5 rounded-full mx-auto bg-black cursor-pointer'
                 whileHover={{scale:1.1}}
                 whileTap={{scale:0.9}}
                 >
-                  <div className="h-full w-full bg-contain bg-center bg-no-repeat" style={{backgroundImage: `${mute ? `url('../image/icon/muted.svg')` : `url('../image/icon/speaker.svg')`}`, backgroundSize: '70%'}}></div>
+                  <div className="h-full w-full bg-contain bg-center bg-no-repeat" style={{backgroundImage: `${mute ? `url('./image/icon/muted.svg')` : `url('./image/icon/speaker.svg')`}`, backgroundSize: '70%'}}></div>
                 </motion.div>   
               </div>    
             </nav>           

@@ -88,7 +88,7 @@ export default function StoryCutscenes(){
                         <ul>
                             {cutscenes.filter(item=>item.category === currentCategory).map((item,i)=>
                             <motion.li onClick={()=>{ChangeVideo(item.name)}} className="text-lg text-white my-5 cursor-pointer flex" key={i} whileHover={{scale:1.01}} whileTap={{scale:1}}>
-                                <img className="h-6 w-6 mr-2" src="../image/icon/play_circle.svg"></img>{item.name}
+                                <img className="h-6 w-6 mr-2" src="./image/icon/play_circle.svg"></img>{item.name}
                             </motion.li>
                             )}
                         </ul>
@@ -107,10 +107,10 @@ export default function StoryCutscenes(){
                 transition={{duration: 1.6, ease: 'easeInOut'}}
                 >         
                     <motion.div whileHover={{scale:1.05}} whileTap={{scale: 1}} transition={{ease: 'easeInOut'}}>
-                    <button onClick={handlePlay} className='h-16 w-16 lg:h-20 lg:w-20 mx-1 lg:mx-5 text-lg bg-transparent border-2 transition duration-300 ease-in-out text-white rounded-full'><img className='h-12 w-12 mx-auto' src={`../image/icon/${playing ? "pause" : "play"}.svg`} alt='PlayIcon'/></button>  
+                    <button onClick={handlePlay} className='h-16 w-16 lg:h-20 lg:w-20 mx-1 lg:mx-5 text-lg bg-transparent border-2 transition duration-300 ease-in-out text-white rounded-full'><img className='h-12 w-12 mx-auto' src={`./image/icon/${playing ? "pause" : "play"}.svg`} alt='PlayIcon'/></button>  
                     </motion.div>
                     <motion.div whileHover={{scale:1.05}} whileTap={{scale: 1}} transition={{ease: 'easeInOut'}}>
-                    <button className='h-16 w-16 lg:h-20 lg:w-20 mx-1 lg:mx-5 text-lg bg-transparent border-2 transition duration-300 ease-in-out text-white rounded-full'><img className='h-12 w-12 mx-auto' src={'../image/icon/speaker.svg'} alt='VolumeIcon'/></button>   
+                    <button className='h-16 w-16 lg:h-20 lg:w-20 mx-1 lg:mx-5 text-lg bg-transparent border-2 transition duration-300 ease-in-out text-white rounded-full'><img className='h-12 w-12 mx-auto' src={'./image/icon/speaker.svg'} alt='VolumeIcon'/></button>   
                     </motion.div>
                     <input onChange={handleChangeVolume} ref={refVolumeRange} type={'range'} className='appearance-none rounded-xl p-0 h-1 bg-slate-100' min={0} max={100} defaultValue={20}/>          
             </motion.div>
