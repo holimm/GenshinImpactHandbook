@@ -1,7 +1,7 @@
 # GenshinImpactHandbook 🎶
 
 ## ❓ What's this app about
-A simple Genshin Impact Handbook, includes character models and cutscenes. All 3D models were created by [Pablo Dobarro](https://www.artstation.com/pablodp606).
+A simple Genshin Impact Handbook, includes character models and cutscenes. More features will be updated later. All 3D models were created by [Pablo Dobarro](https://www.artstation.com/pablodp606).
 ## Preview - [Live Site](https://holimm.github.io/GenshinImpactHandbook/)
 ![1](https://github.com/holimm/GenshinImpactHandbook/assets/95845053/802e4db3-0b20-434e-9edc-c98d342371d1)
 ![2](https://github.com/holimm/GenshinImpactHandbook/assets/95845053/9413492a-de7f-4f60-acbc-dfb604fdbf4a)
