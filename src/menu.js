@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { setMenuState, setModelsVisible, setModelsDetail, setStoryCutscenesVisible } from "./counter/counterSlice";
 import { useSelector, useDispatch } from "react-redux/es/exports";
@@ -13,6 +13,7 @@ export default function Menu(){
     const menuState = useSelector((state)=>state.counter.menuState);
     const models_detail = useSelector((state)=>state.counter.models_detail);
     const models_detail_visible = useSelector((state)=>state.counter.models_detail_visible);
+    const refTabAnimation = useRef(null)
     function MenuTab(){
       const refMenu = useRef(null);
       function RemoveMenu(){
@@ -24,8 +25,8 @@ export default function Menu(){
         setTimeout(()=>{dispatch(setMenuState(true));navigate('/GenshinImpactHandbook');},600)
       }
       function RedirectToStoryCutscenes(){
-        refMenu.current.classList.add('remove-menu');
-        setTimeout(()=>{dispatch(setMenuState(true));navigate('/GenshinImpactHandbook/StoryCutscenes');},600)
+        refTabAnimation.current.classList.add('tab-animate');
+        setTimeout(()=>{dispatch(setMenuState(true));navigate('/GenshinImpactHandbook/StoryCutscenes');},950)
       }
       function MenuContent(){    
         return(
@@ -93,7 +94,7 @@ export default function Menu(){
                 <div className="h-full w-full p-3">
                   <div className="h-4/6 w-full bg-contain bg-center bg-no-repeat" style={{backgroundImage: `url('../image/icon/characterIcon.webp')`,backgroundSize: '60%', backgroundPositionY: '25%'}}></div>
                   <div className="h-2/6 w-full flex justify-center items-center">
-                    <p className="text-md">Story Cutscenes</p>
+                    <p className="text-md">Cutscenes</p>
                   </div>
                 </div>
               </motion.div>
@@ -142,6 +143,7 @@ export default function Menu(){
     }
 
     return (<>
+    <motion.div ref={refTabAnimation} className="h-screen w-full absolute left-[100vw] z-50 bg-white"></motion.div>
     <MenuTab/>
     </>)
 }

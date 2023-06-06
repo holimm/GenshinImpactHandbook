@@ -31,13 +31,13 @@ export default function Home(){
           <div className='h-fit w-fit absolute top-0 right-0'>
             <nav className=' h-28 w-full flex justify-end items-center'>
               <div className="h-fit w-fit mr-10 md:mr-16 lg:mr-24 mt-10 md:mt-32 lg:mt-40">
-                <motion.div onClick={()=>dispatch(setMenuState())} className='h-24 w-24 rounded-full mx-auto bg-white cursor-pointer'
+                <motion.div onClick={()=>dispatch(setMenuState())} className='h-24 w-24 rounded-full mx-auto bg-black cursor-pointer'
                 whileHover={{scale:1.1}}
                 whileTap={{scale:0.9}}
                 >
                   <div className="h-full w-full bg-contain bg-center bg-no-repeat" style={{backgroundImage: `url('../image/icon/paimon.webp')`, backgroundSize: '70%'}}></div>
                 </motion.div>   
-                <motion.div onClick={()=>ChangeMute()} className='h-20 w-20 mt-5 rounded-full mx-auto bg-white cursor-pointer'
+                <motion.div onClick={()=>ChangeMute()} className='h-20 w-20 mt-5 rounded-full mx-auto bg-black cursor-pointer'
                 whileHover={{scale:1.1}}
                 whileTap={{scale:0.9}}
                 >

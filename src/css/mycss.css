@@ -20,10 +20,25 @@
   animation-name: animation_menu;
   animation-duration: 1.5s;
 }
-
+.tab-animate {
+  animation-name: animation_tab;
+  animation-duration: 1s;
+}
+.tab-animate-close {
+  animation-name: animation_tab_close;
+  animation-duration: 1.5s;
+}
 @keyframes animation_menu {
   0%   {top:0px;}
   100% {top:-2000px;}
+}
+@keyframes animation_tab {
+  0%   {left: 100vw;}
+  100% {left: 0;}
+}
+@keyframes animation_close {
+  0%   {left: -100vw;}
+  100% {left: 0;}
 }
 
 @font-face {

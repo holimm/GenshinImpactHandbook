@@ -281,16 +281,286 @@ export const counterSlice = createSlice({
         models_detail: null,
         models_detail_visible: false,
         story_cutscenes: [
-            {
-            name: "Promise of a People's Dream",
-            url: "hQ5GEOlwLUQ"
+            {name: "Promise of a People's Dream",
+            ytb_name: "Story Teaser: Promise of a People's Dream | Genshin Impact",
+            url: "hQ5GEOlwLUQ",
+            ytb_url: "https://www.youtube.com/watch?v=hQ5GEOlwLUQ",
+            category: "Main Story"
             },
-            {
-            name: "Tsubaki in Thawing Snow",
-            url: "rAlymhPyKhQ"
+            {name: "The Divine Damsel of Devastation",
+            ytb_name: "Story Teaser: The Divine Damsel of Devastation | Genshin Impact",
+            url: "EiAhMr6IJTQ",
+            ytb_url: "https://www.youtube.com/watch?v=EiAhMr6IJTQ" ,
+            category: "Main Story"
+            },
+            {name: "Only Old Memories Remain",
+            ytb_name: "Story Teaser: Only Old Memories Remain | Genshin Impact",
+            url: "ZVnfjTVZrWY",
+            ytb_url: "https://www.youtube.com/watch?v=ZVnfjTVZrWY" ,
+            category: "Main Story"
+            },
+            {name: "Moment of Life or Death",
+            ytb_name: `Perilous Trail Event Cutscene Animation: "Moment of Life or Death" | Genshin Impact`,
+            url: "C24nvloZZhE",
+            ytb_url: "https://www.youtube.com/watch?v=C24nvloZZhE" ,
+            category: "Main Story"
+            },
+            {name: "Dance of Sabzeruz",
+            ytb_name: `Cutscene Animation: "Dance of Sabzeruz" | Genshin Impact`,
+            url: "ASR41LdpTKw",
+            ytb_url: "https://www.youtube.com/watch?v=ASR41LdpTKw" ,
+            category: "Main Story"
+            },
+            {name: "Lost Legacies in the Sand",
+            ytb_name: "Story Teaser: Lost Legacies in the Sand | Genshin Impact",
+            url: "EEGh9J0TH2E",
+            ytb_url: "https://www.youtube.com/watch?v=EEGh9J0TH2E" ,
+            category: "Main Story"
+            },
+            {name: `The "Divine" Will`,
+            ytb_name: `Story Teaser: The "Divine" Will | Genshin Impact`,
+            url: "UDQ7m2L9sK8",
+            ytb_url: "https://www.youtube.com/watch?v=UDQ7m2L9sK8" ,
+            category: "Main Story"
+            },            
+            {name: "The First Sage of Buer",
+            ytb_name: `Cutscene Animation: "The First Sage of Buer" | Genshin Impact`,
+            url: "ExVzjvMSnTI",
+            ytb_url: "https://www.youtube.com/watch?v=ExVzjvMSnTI" ,
+            category: "Main Story"
+            },
+            {name: "A Dream of Falling Branches",
+            ytb_name: `Cutscene Animation: "A Dream of Falling Branches" | Genshin Impact`,
+            url: "zgQG0b-Isbk",
+            ytb_url: "https://www.youtube.com/watch?v=zgQG0b-Isbk" ,
+            category: "Main Story"
+            },
+            {name: "Homecoming",
+            ytb_name: `Cutscene Animation: "Homecoming" | Genshin Impact`,
+            url: "tY7iTQ5LAzM",
+            ytb_url: "https://www.youtube.com/watch?v=tY7iTQ5LAzM" ,
+            category: "Main Story"
+            },          
+            
+            {name: "Klee: Fleeing Sunlight in the Night",
+            ytb_name: `Character Tales - "Fleeing Sunlight in the Night" | Genshin Impact`,
+            url: "TFOeQuShLME",
+            ytb_url: "https://www.youtube.com/watch?v=TFOeQuShLME" ,
+            category: "Character Tales"
+            },
+            {name: "Childe: Sigil of Permission",
+            ytb_name: `Character Tales - "Childe: Sigil of Permission" | Genshin Impact`,
+            url: "ZF4KyX0ASnI",
+            ytb_url: "https://www.youtube.com/watch?v=ZF4KyX0ASnI" ,
+            category: "Character Tales"
+            },
+            {name: "Zhongli: An Additional Expense",
+            ytb_name: `Character Tales - "Zhongli: An Additional Expense" | Genshin Impact`,
+            url: "CvCzYbVei04",
+            ytb_url: "https://www.youtube.com/watch?v=CvCzYbVei04" ,
+            category: "Character Tales"
+            },
+            {name: "Albedo: Still Life and Creation",
+            ytb_name: `Character Teaser - "Albedo: Still Life and Creation" | Genshin Impact`,
+            url: "EgnqSKptayI",
+            ytb_url: "https://www.youtube.com/watch?v=EgnqSKptayI" ,
+            category: "Character Tales"
+            },
+            {name: "Ganyu: A Night in Liyue Harbor",
+            ytb_name: `Character Teaser - "Ganyu: A Night in Liyue Harbor" | Genshin Impact`,
+            url: "ASO6t2zp_UI",
+            ytb_url: "https://www.youtube.com/watch?v=ASO6t2zp_UI" ,
+            category: "Character Tales"
+            },
+            {name: "Hu Tao: Scared Yet?",
+            ytb_name: `Character Teaser - "Hu Tao: Scared Yet?" | Genshin Impact`,
+            url: "dc3eD6C6Gbk",
+            ytb_url: "https://www.youtube.com/watch?v=dc3eD6C6Gbk" ,
+            category: "Character Tales"
+            },
+            {name: "Venti: The Four Winds",
+            ytb_name: `Character Teaser - "Venti: The Four Winds" (English Voice-Over) | Genshin Impact`,
+            url: "M9kQP-cmipY",
+            ytb_url: "https://www.youtube.com/watch?v=M9kQP-cmipY" ,
+            category: "Character Tales"
+            },
+            {name: "Eula: Midnight Encounter at the Tavern",
+            ytb_name: `Character Teaser - "Eula: Midnight Encounter at the Tavern" | Genshin Impact`,
+            url: "fFHfbH8UrFE",
+            ytb_url: "https://www.youtube.com/watch?v=fFHfbH8UrFE" ,
+            category: "Character Tales"
+            },
+            {name: "Kaedehara Kazuha: Moonlit Breeze",
+            ytb_name: `Character Teaser - "Kaedehara Kazuha: Moonlit Breeze" | Genshin Impact`,
+            url: "ST5v7-C3iDk",
+            ytb_url: "https://www.youtube.com/watch?v=ST5v7-C3iDk" ,
+            category: "Character Tales"
+            },
+            {name: "Kamisato Ayaka: The Homeward Heron",
+            ytb_name: `Character Teaser - "Kamisato Ayaka: The Homeward Heron" | Genshin Impact`,
+            url: "vsCO7C416bs",
+            ytb_url: "https://www.youtube.com/watch?v=vsCO7C416bs" ,
+            category: "Character Tales"
+            },
+            {name: "Yoimiya: The Queen of Summer on Narukami Island",
+            ytb_name: `Character Teaser - "Yoimiya: The Queen of Summer on Narukami Island" | Genshin Impact`,
+            url: "AtqToYEE5r4",
+            ytb_url: "https://www.youtube.com/watch?v=AtqToYEE5r4" ,
+            category: "Character Tales"
+            },
+            {name: "Raiden Shogun: Nightmare",
+            ytb_name: `Character Teaser - "Raiden Shogun: Nightmare" | Genshin Impact`,
+            url: "ydPqFAEgHzs",
+            ytb_url: "https://www.youtube.com/watch?v=ydPqFAEgHzs" ,
+            category: "Character Tales"
+            },
+            {name: "Sangonomiya Kokomi: The Ocean's Will",
+            ytb_name: `Character Teaser - "Sangonomiya Kokomi: The Ocean's Will" | Genshin Impact`,
+            url: "OizK-VT4aj8",
+            ytb_url: "https://www.youtube.com/watch?v=OizK-VT4aj8" ,
+            category: "Character Tales"
+            },
+            {name: "Arataki Itto: That's How the Show Should Go!",
+            ytb_name: `Character Teaser - "Arataki Itto: That's How the Show Should Go!" | Genshin Impact`,
+            url: "KGjnRThxe7k",
+            ytb_url: "https://www.youtube.com/watch?v=KGjnRThxe7k" ,
+            category: "Character Tales"
+            },
+            {name: "Shenhe: Lonesome Dream",
+            ytb_name: `Character Teaser - "Shenhe: Lonesome Dream" | Genshin Impact`,
+            url: "jvGnekdMOhI",
+            ytb_url: "https://www.youtube.com/watch?v=jvGnekdMOhI" ,
+            category: "Character Tales"
+            },
+            {name: "Yae Miko: Kitsune's Affections",
+            ytb_name: `Character Teaser - "Yae Miko: Kitsune's Affections" | Genshin Impact`,
+            url: "tV2QOX9fXEE",
+            ytb_url: "https://www.youtube.com/watch?v=tV2QOX9fXEE" ,
+            category: "Character Tales"
+            },
+            {name: "Kamisato Ayato: Lanterns in the Night",
+            ytb_name: `Character Teaser - "Kamisato Ayato: Lanterns in the Night" | Genshin Impact`,
+            url: "s3ok84NeMdU",
+            ytb_url: "https://www.youtube.com/watch?v=s3ok84NeMdU" ,
+            category: "Character Tales"
+            },
+            {name: "Yelan: Inevitable Justice",
+            ytb_name: `Character Teaser - "Yelan: Inevitable Justice" | Genshin Impact`,
+            url: "nEX4Umn5Bx8",
+            ytb_url: "https://www.youtube.com/watch?v=nEX4Umn5Bx8" ,
+            category: "Character Tales"
+            },
+            {name: "Tighnari: When All Is Said",
+            ytb_name: `Character Teaser - "Tighnari: When All Is Said" | Genshin Impact`,
+            url: "ox9_6NJP4J4",
+            ytb_url: "https://www.youtube.com/watch?v=" ,
+            category: "Character Tales"
+            },
+            {name: "Cyno: A Just Punishment",
+            ytb_name: `Character Teaser - "Cyno: A Just Punishment" | Genshin Impact`,
+            url: "2bNgDa4nApQ",
+            ytb_url: "https://www.youtube.com/watch?v=2bNgDa4nApQ" ,
+            category: "Character Tales"
+            },
+            {name: "Nilou: Dancing Grace",
+            ytb_name: `Character Teaser - "Nilou: Dancing Grace" | Genshin Impact`,
+            url: "rhvEIQj92w0",
+            ytb_url: "https://www.youtube.com/watch?v=rhvEIQj92w0" ,
+            category: "Character Tales"
+            },
+            {name: "Nahida: Happy Birthday",
+            ytb_name: `Character Teaser - "Nahida: Happy Birthday" | Genshin Impact`,
+            url: "DWlWuVU4ZiI",
+            ytb_url: "https://www.youtube.com/watch?v=DWlWuVU4ZiI" ,
+            category: "Character Tales"
+            },
+            {name: "Wanderer: Ashes",
+            ytb_name: `Character Teaser - "Wanderer: Ashes" | Genshin Impact`,
+            url: "AR2n2TsJuNE",
+            ytb_url: "https://www.youtube.com/watch?v=AR2n2TsJuNE" ,
+            category: "Character Tales"
+            },
+            {name: "Alhaitham: Questions and Silence",
+            ytb_name: `Character Teaser - "Alhaitham: Questions and Silence" | Genshin Impact`,
+            url: "JeOJi3tNIDs",
+            ytb_url: "https://www.youtube.com/watch?v=JeOJi3tNIDs" ,
+            category: "Character Tales"
+            },
+            {name: "Dehya: Dawn Over the Sand",
+            ytb_name: `Character Teaser - "Dehya: Dawn Over the Sand" | Genshin Impact`,
+            url: "fmYko2bWjnI",
+            ytb_url: "https://www.youtube.com/watch?v=fmYko2bWjnI" ,
+            category: "Character Tales"
+            },
+            {name: "Baizhu: An Elusive Curative",
+            ytb_name: `Character Teaser - "Baizhu: An Elusive Curative" | Genshin Impact`,
+            url: "8cZSZksffhk",
+            ytb_url: "https://www.youtube.com/watch?v=8cZSZksffhk" ,
+            category: "Character Tales"
+            },
+
+            {name: "Flavors of the World",
+            ytb_name: "Story Teaser: Flavors of the World | Genshin Impact",
+            url: "sHshbPUOXo4",
+            ytb_url: "https://www.youtube.com/watch?v=sHshbPUOXo4" ,
+            category: "Event Cutscene"
+            },
+            {name: "Fleeting Colors in Flight",
+            ytb_name: `Fleeting Colors in Flight Event Cutscene Animation: "Age of Flowing Hues" | Genshin Impact`,
+            url: "GJiO22r9418",
+            ytb_url: "https://www.youtube.com/watch?v=GJiO22r9418" ,
+            category: "Event Cutscene"
+            },
+            {name: "Golden Midsummer",
+            ytb_name: "Story Teaser: Golden Midsummer | Genshin Impact",
+            url: "0YzmuPmUYE4",
+            ytb_url: "https://www.youtube.com/watch?v=0YzmuPmUYE4" ,
+            category: "Event Cutscene"
+            },
+            {name: "Tale of the Five Kasen",
+            ytb_name: "Story Teaser: Tale of the Five Kasen | Genshin Impact",
+            url: "bVDDhl26Q0I",
+            ytb_url: "https://www.youtube.com/watch?v=bVDDhl26Q0I" ,
+            category: "Event Cutscene"
+            },
+            {name: "Ballads and Brews",
+            ytb_name: `Of Ballads and Brews Event Cutscene Animation: "The Wind Returns for the Fairbrew" | Genshin Impact`,
+            url: "_76oCzo8sjU",
+            ytb_url: "https://www.youtube.com/watch?v=_76oCzo8sjU" ,
+            category: "Event Cutscene"
+            },
+            {name: "Akitsu Haneasobi",
+            ytb_name: "Story Teaser: Akitsu Haneasobi | Genshin Impact",
+            url: "CTWxnQawAqE",
+            ytb_url: "https://www.youtube.com/watch?v=CTWxnQawAqE" ,
+            category: "Event Cutscene"
+            },
+            {name: "Echoes of the Heart",
+            ytb_name: "Story Teaser: Echoes of the Heart | Genshin Impact",
+            url: "d1OANwZ29ww",
+            ytb_url: "https://www.youtube.com/watch?v=d1OANwZ29ww" ,
+            category: "Event Cutscene"
+            },
+            {name: "The Exquisite Night Chimes",
+            ytb_name: `The Exquisite Night Chimes Cutscene Animation: "A Brilliant Banquet of Music" | Genshin Impact`,
+            url: "DXcQSUZuOKk",
+            ytb_url: "https://www.youtube.com/watch?v=DXcQSUZuOKk" ,
+            category: "Event Cutscene"
+            },
+            {name: "A Parade of Providence",
+            ytb_name: `A Parade of Providence Event Cutscene Animation: "Crown of Glory" | Genshin Impact`,
+            url: "ChkbnV25wR8",
+            ytb_url: "https://www.youtube.com/watch?v=ChkbnV25wR8" ,
+            category: "Event Cutscene"
             },
         ],
-        story_cutscenes_playing_url: "",
+        story_cutscenes_playing: [
+            {
+            name: "",
+            ytb_name: "",
+            url: ""
+            },
+        ],
     },
     reducers: {
         setMenuState: (state,bool)=>{
@@ -302,8 +572,9 @@ export const counterSlice = createSlice({
         setStoryCutscenesVisible: (state)=>{
             state.story_cutscenes_visible = !state.story_cutscenes_visible;
         },
-        setStoryCutscenesPlayingURL: (state,value)=>{
-            state.story_cutscenes_playing_url = value.payload;
+        setStoryCutscenesPlaying: (state,value)=>{
+            state.story_cutscenes_playing = state.story_cutscenes.filter(item => item.name === value.payload);
+            console.log(state.story_cutscenes_playing)
         },
         setModelsDetail: (state,item)=>{           
             if(item.payload!==null){
@@ -320,5 +591,5 @@ export const counterSlice = createSlice({
     },
 })
 
-export const { setMenuState, setModelsVisible, setModelsDetail, setStoryCutscenesVisible, setStoryCutscenesPlayingURL } = counterSlice.actions;
+export const { setMenuState, setModelsVisible, setModelsDetail, setStoryCutscenesVisible, setStoryCutscenesPlaying } = counterSlice.actions;
 export default counterSlice.reducer;
