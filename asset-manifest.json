@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/GenshinImpactHandbook/static/css/main.ff09faa6.css",
-    "main.js": "/GenshinImpactHandbook/static/js/main.54ce7765.js",
+    "main.js": "/GenshinImpactHandbook/static/js/main.215f9e8e.js",
     "static/media/zh-cn.ttf": "/GenshinImpactHandbook/static/media/zh-cn.54a8212866e6ec1b1003.ttf",
     "index.html": "/GenshinImpactHandbook/index.html",
     "main.ff09faa6.css.map": "/GenshinImpactHandbook/static/css/main.ff09faa6.css.map",
-    "main.54ce7765.js.map": "/GenshinImpactHandbook/static/js/main.54ce7765.js.map"
+    "main.215f9e8e.js.map": "/GenshinImpactHandbook/static/js/main.215f9e8e.js.map"
   },
   "entrypoints": [
     "static/css/main.ff09faa6.css",
-    "static/js/main.54ce7765.js"
+    "static/js/main.215f9e8e.js"
   ]
 }
